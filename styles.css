@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+:root {
+  --primary-color: #080808;
+  --secondary-color: #60acaa;
+  --primary-text-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Pirata One", cursive;
+  width: 100%;
+  background-image: url(./pirate.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
