@@ -3,6 +3,7 @@
   --primary-color: #080808;
   --secondary-color: #60acaa;
   --primary-text-color: #fff;
+  --transparent-color: rgb(255 255 255 / 30%);
 }
 
 * {
@@ -30,6 +31,50 @@ nav {
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+.text-area {
+  width: 35rem;
+  max-width: 500px;
+  background: var(--transparent-color);
+  font-size: 1.5rem;
+  margin: 2rem 0rem;
+  font-family: "Pirata One", cursive;
+  border: none;
+  font-weight: light;
+  outline: none;
+  padding: 0.5rem;
+  box-shadow: 0px 2px 3px var(--secondary-color);
+}
+.text-area::placeholder {
+  font-family: "Pirata One", cursive;
+}
+.text-area:focus {
+  outline: 1px solid;
+}
+
+#convert-btn {
+  margin: 1rem 0rem;
+  padding: 0.5rem 3.5rem;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Pirata One", cursive;
+  letter-spacing: 0.3rem;
+  box-shadow: 0px 3px 5px var(--secondary-color);
+}
+#convert-btn:hover {
+  transform: scale(1.06);
+}
+.para-line {
+  font-size: 1.5rem;
+}
 footer {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
@@ -37,6 +82,22 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 1.5rem;
+}
+.footer-head {
+  font-size: 1.8rem;
+}
+.footer-description {
+  font-size: 1.2rem;
+  text-align: center;
+
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .text-area {
+    width: 80%;
+  }
 }
